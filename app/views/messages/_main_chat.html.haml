@@ -1,0 +1,30 @@
+.chat-main
+  .chat-main__group-info
+    .group-info_left-box
+      %h2.group-info_left-box-current-group
+        test
+      %ul.group-info_left-box-member-list
+        Member :
+        %li.group-info_left-box-member-list-member
+          さおり
+    %a.group-info_right-box
+      .group-info_right-box_edit-btn Edit
+  .chat-main__messages
+    .message-list
+      .message-list-info
+        %p.message-list-info_name さおり
+        %p.message-list-info_date　2020/03/15(sun) 02:21:15
+      .message_text ヤッホー
+    .message-list
+      .message-list-info
+        %p.message-list-info_name さおり
+        %p.message-list-info_date　2020/03/15(sun) 02:25:00
+      .message_text イェーイ
+  .chat-main__message-form
+    %form.new_message.new_message
+      .input-box
+        %input{type: "text", class: "input-box__text", placeholder: "type a message"}
+        %label{class: "input-box__image"}
+          = icon('fas', 'image')
+          %input{type: "file", class: "input-box__image-file"}
+      %input{type: "submit", class: "submit-btn"}
