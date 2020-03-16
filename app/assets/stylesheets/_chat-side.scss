@@ -19,7 +19,7 @@
       display: flex;
       justify-content: space-between;
       color: white;
-      .top-items__icons{
+      &__icons{
         color: #ffffff;
         margin-right: 5px;
         display: flex;
@@ -28,12 +28,12 @@
           color: white;
           text-decoration: none;
         }
-        .icons-menu__new-group{
+        &__icons-menu__new-group{
           color: #ffffff;
           display: inline-block;
           margin-right: 5px;
         }
-        .icon-menu__edit-user{
+        &__icon-menu__edit-user{
           color: #ffffff;
           margin-right: 5px;
           display: inline-block;
@@ -53,12 +53,12 @@
       align-items: center;
       text-decoration: none;
       color: #ffffff;
-      .group-group-name{
+      &__group-name{
         font-size: 15px;
         margin-bottom: 5px;
         display: block;
       }
-      .group-latest-message{
+      &__latest-message{
         font-size: 11px;
         margin-bottom: 40px;
       }
