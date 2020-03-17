@@ -1,0 +1,20 @@
+.chat-side 
+  .side-bar_group-name
+    .top-items
+      %p.top-items__name さおり
+      %ul.top-items__icons
+        %li.top-items__icons-menu__new-group
+          = link_to "#" do
+            = icon('fas', 'edit')
+        %li.top-items__icons-menu__edit-user 
+          = link_to "#" do
+            = icon('fas', 'cog')
+  .side-bar_group-list
+    .group
+      = link_to "#", class:"group" do
+        %p.group__group-name 
+          test
+        %p.group__latest-message
+          まだメッセージがありません
+
+    
