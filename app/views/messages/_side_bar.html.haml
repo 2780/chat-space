@@ -1,14 +1,15 @@
 .chat-side 
   .side-bar_group-name
     .top-items
-      %p.top-items__name さおり
+      %p.top-items__name
+        = current_user.name
       %ul.top-items__icons
         %li.top-items__icons-menu__new-group
-          = link_to "#" do
-            = icon('fas', 'edit')
+          = link_to do
+            = icon('fas', 'pen-square', class: 'icon')
         %li.top-items__icons-menu__edit-user 
-          = link_to "#" do
-            = icon('fas', 'cog')
+          = link_to edit_user_path(current_user) do
+            = icon('fas', 'cog', class: 'icon')
   .side-bar_group-list
     .group
       = link_to "#", class:"group" do
