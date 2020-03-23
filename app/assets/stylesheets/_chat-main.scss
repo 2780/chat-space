@@ -31,17 +31,19 @@
     }
     .group-info__right-box{
       color: #414d53;
-      text-decoration: none;
       .group-info__right-box_edit-btn{
-        height: 40px;
-        line-height: 40px;
-        padding: 0px 20px;
-        margin-top: 30px;
-        color: #38aef0;
-        border: solid 1px #38aef0;
-        position: absolute;
-        top: 0;
-        right: 40px;
+        a{
+          height: 40px;
+          line-height: 40px;
+          padding: 0px 20px;
+          margin-top: 30px;
+          color: #38aef0;
+          border: solid 1px #38aef0;
+          position: absolute;
+          top: 0;
+          right: 40px;
+          text-decoration: none;
+        }
       }
     }
   }
@@ -52,15 +54,15 @@
     overflow: scroll;
     .message-list{
       padding-bottom: 40px;
-      &__info{
+      .message-list__info{
         display: flex;
         margin-bottom: 10px;
-        &__info_name{
+        .message-list__info_name{
           color: #434a54;
           font-size: 16px;
           font-weight: bold;
         }
-        &__info_date{
+        .message-list__info_date{
           color: #999999;
           font-size: 12px;
           margin-left: 10px;
